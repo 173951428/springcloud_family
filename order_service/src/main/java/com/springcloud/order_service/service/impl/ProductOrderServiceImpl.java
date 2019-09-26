@@ -18,7 +18,7 @@ public class ProductOrderServiceImpl implements ProductOrderService {
 
     @Override
     public ProductOrder save(int userId, int productId) {
-        // rest 接口调用风格，调用商品服务的接口
+        // rest 接口调用风格，调用商品服务的接口,
         Map<String, Object> productMap = restTemplate.getForObject("http://product-service/api/v1/product/findById?id=" + productId, Map.class);
         ProductOrder productOrder = new ProductOrder();
         productOrder.setCreateTime(new Date());

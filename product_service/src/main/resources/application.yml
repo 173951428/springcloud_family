@@ -1,0 +1,43 @@
+server:
+  port: 8771
+
+
+spring :
+  # 环境 dev|test|prod
+  profiles :
+    active : dev
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      maxFileSize : 10MB
+
+  #  thymeleaf 模板引擎配置，可以代替jsp，只是语法不同而已
+  thymeleaf:
+    model: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+
+  # 指定应用的名称
+  application:
+    name: product-service
+
+
+## 该配置节点为独立的节点
+mybatis:
+  #注意：一定要对应mapper映射xml文件的所在路径
+  mapper-locations: classpath:mapper/*.xml
+  # 注意：对应实体类的路径
+  type-aliases-package: net.zxp.product_service.entity
+
+#pagehelper分页插件
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+#指定注册中心的地址（该注册中心需要提前启动）
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

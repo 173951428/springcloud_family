@@ -28,6 +28,9 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
   # 注意：对应实体类的路径
   type-aliases-package: net.zxp.product_service.entity
+  configuration:
+    # 打开mybatis 日志
+    log-impl:  org.apache.ibatis.logging.stdout.StdOutImpl
 
 #pagehelper分页插件
 pagehelper:
@@ -36,7 +39,7 @@ pagehelper:
   supportMethodsArguments: true
   params: count=countSql
 
-#指定注册中心的地址（该注册中心需要提前启动）
+#指定注册中心的地址（该注册中心服务模块需要提前启动）
 eureka:
   client:
     serviceUrl:

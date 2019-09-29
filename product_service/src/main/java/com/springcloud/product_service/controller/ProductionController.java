@@ -38,7 +38,7 @@ public class ProductionController {
      * @return
      */
     @RequestMapping("findById")
-    public Production findById(Integer id) {
+    public Object findById(Integer id) {
         Production production = service.findById(id);
         Production result = new Production();
         BeanUtils.copyProperties(production, result);

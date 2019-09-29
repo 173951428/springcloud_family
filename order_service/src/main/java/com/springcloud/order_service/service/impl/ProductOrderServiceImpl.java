@@ -26,6 +26,8 @@ public class ProductOrderServiceImpl implements ProductOrderService {
         productOrder.setTradeNo(UUID.randomUUID().toString());
         productOrder.setProductName(productMap.get("name").toString());
         productOrder.setPrice(Integer.parseInt(productMap.get("price").toString()));
+
+        System.out.println("新增加分支");
         return productOrder;
     }
 }

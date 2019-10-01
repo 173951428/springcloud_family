@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "product-service") // 指定调用服务模块的applicationName。
 public interface ProductClient {
     @GetMapping("api/v1/product/findById") // product_service的需要调用的接口名字
-    String findById(@RequestParam("id") Integer id);
+    String findById(@RequestParam(value = "id") Integer id);
 }

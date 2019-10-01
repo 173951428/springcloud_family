@@ -15,7 +15,7 @@ public class ProductOrder implements Serializable {
     /**
      * 商品名称
      */
-    private String productName;
+    private String name;
     /**
      * 商品价格
      */

@@ -4,8 +4,6 @@ import com.springcloud.quartz_scheduling.entity.ProductOrder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.UUID;
-
 @Configuration
 public class ConfigurationDemo {
     @Bean("productOrder1")

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springcloud.quartz_scheduling.mapper.ProductionMapper">
+    <resultMap id="BaseResultMap" type="com.springcloud.quartz_scheduling.entity.Production">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="price" jdbcType="BIGINT" property="price" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="store" jdbcType="BIGINT" property="store" />
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, name,price, store
+  </sql>
+
+
+    <select id="findById" parameterType="integer" resultType="com.springcloud.quartz_scheduling.entity.Production">
+       select  * from production where id=#{id}
+    </select>
+</mapper>

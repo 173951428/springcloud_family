@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edf6fb35-a8c0-4981-864d-639086525672" name="Default Changelist" comment="新增加开发分支">
-      <change afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Configuration/ConfigurationDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/entity/ProductOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="edf6fb35-a8c0-4981-864d-639086525672" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/entity/Production.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/mapper/ProductionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/service/ProductionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/service/impl/ProductionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/resources/mapper/ProductionMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/JobDetail/JobDetailList.java" beforeDir="false" afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/JobDetail/JobDetailList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quartz_scheduling/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/quartz_scheduling/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Configuration/ConfigurationDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Configuration/ConfigurationDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/JobDetail/JobDetailList.java" beforeDir="false" afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Quarzt/JobDetailList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/QuartzSchedulingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/QuartzSchedulingApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Quarzt/QuartzConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Quarzt/QuartzConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/entity/ProductOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/entity/ProductOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quartz_scheduling/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/quartz_scheduling/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,22 +48,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/JobDetail/JobDetailList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/entity/ProductOrder.java">
+        <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <caret line="26" column="58" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,10 +60,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Quarzt/QuartzConfiguration.java">
+        <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/service/impl/ProductOrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="112" column="23" lean-forward="true" selection-start-line="112" selection-start-column="23" selection-end-line="112" selection-end-column="23" />
+            <state relative-caret-position="326">
+              <caret line="26" column="48" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,40 +72,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/QuartzSchedulingApplication.java">
+        <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/serviceClient/ProductClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/ProductServiceApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quartz_scheduling/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1239">
-              <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="81" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Configuration/ConfigurationDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="252">
+              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,6 +100,10 @@
       <find>rib</find>
       <find>http://product-service/api/v1/product/findById</find>
       <find>productOrder</find>
+      <find>productionMapper</find>
+      <find>com.springcloud.quartz_scheduling.mapper</find>
+      <find>com.springcloud.product_service.mapper</find>
+      <find>fastj</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,18 +120,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/eureka_service/pom.xml" />
         <option value="$PROJECT_DIR$/eureka_service/src/main/java/com/springcloud/eureka_service/EurekaServiceApplication.java" />
-        <option value="$PROJECT_DIR$/product_service/pom.xml" />
-        <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/mapper/ProductionMapper.java" />
         <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/service/UserService.java" />
-        <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/service/ProductionService.java" />
-        <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/service/impl/ProductionImpl.java" />
         <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/service/impl/UserImpl.java" />
         <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/controller/UserController.java" />
         <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/entity/User.java" />
         <option value="$PROJECT_DIR$/product_service/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/product_service/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/ProductServiceApplication.java" />
         <option value="$PROJECT_DIR$/eureka_service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/entity/Production.java" />
         <option value="$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/entity/ProductOrder.java" />
@@ -179,14 +141,31 @@
         <option value="$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/response/RequestEntityBuilder.java" />
         <option value="$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/restTemplate/CommonRestTemplate.java" />
         <option value="$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/utils/JsonUtils.java" />
-        <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/controller/ProductionController.java" />
         <option value="$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/service/impl/ProductOrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/entity/ProductOrder.java" />
         <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Configuration/ExampleConfiguration.java" />
-        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/QuartzSchedulingApplication.java" />
+        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/entity/Production.java" />
+        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/entity/ProductOrder.java" />
         <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Configuration/ConfigurationDemo.java" />
+        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/service/ProductionService.java" />
+        <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/mapper/ProductionMapper.java" />
+        <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/service/impl/ProductionImpl.java" />
+        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/resources/mapper/Production.xml" />
+        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/service/impl/ProductionImpl.java" />
+        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/mapper/ProductionMapper.java" />
+        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/service/ProductionService.java" />
+        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/service/impl/ProductionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/controller/ProductionController.java" />
+        <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/quartz/QuartzConfiguration.java" />
+        <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/quartz/JobDetailList.java" />
+        <option value="$PROJECT_DIR$/quartz_scheduling/pom.xml" />
+        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/QuartzSchedulingApplication.java" />
+        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/resources/mapper/ProductionMapper.xml" />
         <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/JobDetail/JobDetailList.java" />
+        <option value="$PROJECT_DIR$/product_service/pom.xml" />
+        <option value="$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/ProductServiceApplication.java" />
         <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Quarzt/QuartzConfiguration.java" />
+        <option value="$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Quarzt/JobDetailList.java" />
       </list>
     </option>
   </component>
@@ -244,109 +223,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="springcloud_family" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud_family" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud_family" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud_family" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud_family" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud_family" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud_family" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud_family" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud_family" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud_family" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud_family" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud_family" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud_family" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud_family" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud_family" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud_family" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud_family" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud_family" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="Configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud_family" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud_family" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="JobDetail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud_family" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud_family" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="quartz_scheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="Quarzt" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -369,7 +246,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ms-pes-jd-family" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/quartz_scheduling/src/main/resources/mapper" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -379,18 +256,23 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\springcloud_family\order_service\src\main\java\com\springcloud\order_service" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.springcloud.order_service" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.springcloud.quartz_scheduling.entity" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springcloud_family\quartz_scheduling\src\main\resources\mapper" />
       <recent name="D:\springcloud_family\product_service\src\main\resources" />
       <recent name="D:\springcloud_family\product_service\src\main\java\com\springcloud\product_service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.springcloud.quartz_scheduling.Quarzt" />
+      <recent name="com.springcloud.product_service.quartz" />
+      <recent name="com.springcloud.quartz_scheduling.entity" />
+      <recent name="com.springcloud.quartz_scheduling.mapper" />
+      <recent name="com.springcloud.quartz_scheduling.service.impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\springcloud_family\order_service\src\main\java\com\springcloud\order_service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -510,7 +392,7 @@
       <workItem from="1569994438417" duration="677000" />
       <workItem from="1570001985640" duration="1277000" />
       <workItem from="1570003593833" duration="6856000" />
-      <workItem from="1570028515523" duration="2100000" />
+      <workItem from="1570028515523" duration="10280000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <created>1569509565855</created>
@@ -526,11 +408,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569509904959</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成定时任务模块搭建，以及@Bean和@Configuration 注解配合使用">
+      <created>1570030717041</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570030717041</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54675000" />
+    <option name="totallyTimeSpent" value="62855000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -543,9 +432,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2196162" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2196162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -554,7 +442,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27735645" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -564,12 +452,12 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021322" side_tool="true" weight="0.3564464" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32900432" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32827735" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32936078" />
       <window_info anchor="bottom" id="Tail" order="15" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.4978678" visible="true" weight="0.24702059" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.4978678" visible="true" weight="0.38786566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -583,7 +471,7 @@
       <window_info anchor="right" id="Word Book" order="10" side_tool="true" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2196162" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2196162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -592,7 +480,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27735645" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -602,12 +490,12 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021322" side_tool="true" weight="0.3564464" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32900432" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32827735" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32936078" />
       <window_info anchor="bottom" id="Tail" order="15" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.4978678" visible="true" weight="0.42361864" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.4978678" visible="true" weight="0.48212352" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -627,7 +515,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="完成定时任务模块搭建，以及@Bean和@Configuration 注解配合使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成定时任务模块搭建，以及@Bean和@Configuration 注解配合使用" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -649,103 +538,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$0/ProductOrderServiceImpl.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java" />
-    <entry file="file://$PROJECT_DIR$/eureka_service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="66" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/entity/Production.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar!/lombok/Data.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="52" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_service/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_service/src/main/resources/mapper/Production.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka_service/src/main/java/com/springcloud/eureka_service/EurekaServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka_service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="67" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order_service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/ApplicationServiceNameEnum.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/web/client/RestOperations.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/http/client/support/InterceptingHttpAccessor.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/http/HttpEntity.java" />
-    <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/restTemplate/CommonRestTemplate.java" />
-    <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/response/RequestEntityBuilder.java" />
-    <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/restTemplate/RestOperator.java" />
     <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/restTemplate/ApplicationServiceNameEnum.java" />
     <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/response/ApiResponse.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-javanica/1.5.12/hystrix-javanica-1.5.12.jar!/com/netflix/hystrix/contrib/javanica/command/MethodExecutionAction.class">
@@ -780,26 +572,6 @@
     <entry file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$0/JsonUtils.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$0/ProductController.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$1/ProductController.java" />
-    <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/serviceClient/ProductClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/entity/ProductOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/utils/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -814,48 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/controller/ProductionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/service/impl/ProductionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/service/impl/ProductOrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -884,60 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/ProductServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quartz_scheduling/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="81" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/entity/ProductOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/QuartzSchedulingApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Configuration/ConfigurationDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/JobDetail/JobDetailList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.1.3.RELEASE/spring-context-support-5.1.3.RELEASE.jar!/org/springframework/scheduling/quartz/MethodInvokingJobDetailFactoryBean.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -952,10 +628,298 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/entity/Production.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/entity/ProductOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/entity/ProductOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Configuration/ConfigurationDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="53" lean-forward="true" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/service/impl/ProductionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/resources/mapper/Production.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/service/impl/UserImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/mapper/ProductionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/src/main/resources/mapper/Production.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="9" lean-forward="true" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/service/ProductionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/quartz/QuartzConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-362">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/service/ProductionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/quartz/JobDetailList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/service/impl/ProductionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/QuartzSchedulingApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+          <folding>
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/resources/mapper/ProductionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/entity/Production.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/mapper/ProductionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/ProductServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/JobDetail/JobDetailList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Quarzt/QuartzConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="112" column="23" lean-forward="true" selection-start-line="112" selection-start-column="23" selection-end-line="112" selection-end-column="23" />
+        <state relative-caret-position="-756">
+          <caret column="48" selection-start-column="48" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quartz_scheduling/src/main/java/com/springcloud/quartz_scheduling/Quarzt/JobDetailList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/controller/ProductionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_service/src/main/java/com/springcloud/product_service/service/impl/ProductionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/serviceClient/ProductClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order_service/src/main/java/com/springcloud/order_service/service/impl/ProductOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

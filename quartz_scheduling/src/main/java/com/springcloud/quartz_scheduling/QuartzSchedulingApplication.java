@@ -1,15 +1,16 @@
 package com.springcloud.quartz_scheduling;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+
+@SpringBootApplication
 @EnableScheduling
 @ComponentScan
+@MapperScan(value = "com.springcloud.quartz_scheduling.mapper")
 public class QuartzSchedulingApplication {
 
     public static void main(String[] args) {

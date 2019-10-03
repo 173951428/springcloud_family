@@ -67,13 +67,17 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
-        <!--Hystrix断路器，用于服务的熔断，降级处理-->
+        <!--Hystrix断路器，用于服务的熔断，降级处理.主要用于@HystrixCommand 这个注解-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
 
-
+        <!--加入redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
 
     </dependencies>
 

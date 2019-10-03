@@ -12,3 +12,13 @@ eureka:
 spring:
   application:
     name: order-service
+    # 加入redis服务
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    timeout: 2000
+# feign 默认hystrix，新版本降级熔断保护默认是关闭的，需要手动开启
+feign:
+  hystrix:
+    enabled: true

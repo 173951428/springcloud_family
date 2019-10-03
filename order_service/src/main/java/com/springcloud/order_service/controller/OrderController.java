@@ -22,7 +22,7 @@ public class OrderController {
      * TODO
      */
     @RequestMapping("save")
-  //  @HystrixCommand(fallbackMethod = "saveOrderFail") // 在最外层调用方法里面增加该方法调用失败的方法，用作服务熔断保护。
+    @HystrixCommand(fallbackMethod = "saveOrderFail") // 在最外层调用方法里面增加该方法调用失败的方法，用作服务熔断保护。
     public Map<String,Object> save(@RequestParam("productId") int productId){
         ProductOrder productOrder=productOrderService.save(productId);
         System.out.println("调用订单接口成功");

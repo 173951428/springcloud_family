@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * 因为使用了Feign，所以需要定义一个接口，此接口为订单模块调用商品服务模块接口
  * name : 调用的服务名字
- * fallback: 调用异常以后的服务降级处理
+ * fallback: 调用异常以后的服务降级处理的类->ProductClientFallback，此类必须实现ProductClient接口
  */
 @FeignClient(name = "product-service",fallback = ProductClientFallback.class)
 public interface ProductClient {

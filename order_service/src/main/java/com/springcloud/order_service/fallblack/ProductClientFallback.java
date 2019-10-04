@@ -1,11 +1,9 @@
 package com.springcloud.order_service.fallblack;
-
 import com.springcloud.order_service.serviceClient.ProductClient;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
-
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -31,7 +29,6 @@ public class ProductClientFallback implements ProductClient {
                 System.out.println("已经发送过短信");
             }
         }).start();
-        System.out.println("Fengin 调用 product-server 异常");
         return null;
     }
 }

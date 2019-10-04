@@ -22,3 +22,12 @@ spring:
 feign:
   hystrix:
     enabled: true
+
+# 设置hystrix 超时时间为4秒，这个设置必须设置好，此设置大于feign 的超时时间，用到hystrix 必须配置好，很重要
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000

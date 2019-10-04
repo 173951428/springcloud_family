@@ -1,0 +1,45 @@
+server:
+  port: 9000
+
+
+#指定注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#服务的名称
+spring:
+  application:
+    name: springcloud-gateway
+    # 加入redis服务
+
+# feign 默认hystrix，新版本降级熔断保护默认是关闭的，需要手动开启
+feign:
+  hystrix:
+    enabled: true
+
+# 设置hystrix 超时时间为4秒，这个设置必须设置好，此设置大于feign 的超时时间，用到hystrix 必须配置好，很重要
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
+
+
+zuul:
+  routes:
+    # 自定义网关访问规则,注意，更改服务路由规则不能重命名，否则前面的路由规则会被后面的覆盖
+    order-service: /apigateway/order/**
+    product-service: /apigateway/product/**
+
+
+    #禁止网关端单个order-service服务对外暴露接口
+    #ignored-services: order-service
+
+   # 在网关端禁止所有带-service的服务直接访问
+  ignored-patterns: /*-service/**
+  # 处理http请求获取不到Cookie的问题，默认设置为空
+  sensitive-headers:

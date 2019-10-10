@@ -4,12 +4,20 @@ server:
 
 spring :
   # 环境 dev|test|prod
-  profiles :
-    active : dev
+  #profiles :
+  #  active : dev
   servlet:
     multipart:
       max-request-size: 100MB
       maxFileSize : 10MB
+
+  datasource :
+    url : jdbc:mysql://127.0.0.1:3306/sbp?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+    username : root
+    password : root
+    hikari:
+      maxLifetime: 1765000
+      maximumPoolSize: 15
 
   #  thymeleaf 模板引擎配置，可以代替jsp，只是语法不同而已
   thymeleaf:
@@ -44,3 +52,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+
